@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lotto Jaxx - Play & Win Big!</title>
+        <link rel="shortcut icon" href="images/fav-icon.webp" type="image/x-icon">
+        <meta name="description" content="Lotto Jaxx is your go-to platform for thrilling lottery games and big winnings. Play now and boost your chances to win!">
+        <meta name="keywords" content="Lotto Jaxx, online lottery, jackpot games, win lottery, play lotto online, lottery results">
+        <meta name="author" content="Lotto Jaxx">
+        <meta property="og:title" content="Lotto Jaxx - Play & Win Big!">
+        <meta property="og:description" content="Join Lotto Jaxx for exciting lottery games and massive prizes. Play now and hit the jackpot!">
+        <meta property="og:url" content="https://lottojaxx.com">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://lottojaxx.com/images/lotto-jaxx-thumbnail.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Lotto Jaxx - Play & Win Big!">
+        <meta name="twitter:description" content="Your gateway to the biggest lottery games and winnings. Play with Lotto Jaxx today!">
+        <meta name="twitter:image" content="https://lottojaxx.com/images/lotto-jaxx-thumbnail.png">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="top-bar">
+                <p><img src="images/eighten-warn.png" alt="Age Warning Icon">Accessible only to persons aged 18 and over. Please gamble responsibly.</p>
+            </div>
+            <div class="header-bg header-bg-sub">
+                <div class="menu-bar-bg">
+                    <div class="container">
+                        <div class="menu-bar">
+                            <div class="logo-area">
+                                <img src="images/lotto-jaxx-logo.png" alt="Lotto Jaxx Logo">
+                            </div>
+                            <div class="menu-btn">
+                                <a href="login.html">
+                                    <button class="log-in-btn">Login</button>
+                                </a>
+                                <a href="register.html">
+                                    <button class="register-btn">Register</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="form-bg">
+                <div class="form-bg-rel">
+                    <div class="form-container" id="loginForm">
+                        <h2 class="form-title">Welcome back</h2>
+                        <p class="form-title-p">Enter your details to Log In to your account</p>
+                        <div class="log-google">
+                            <p><img src="images/Google.png" alt="Google">Continue with Google</p>
+                        </div>
+                        <div class="log-apple">
+                            <p><img src="images/apple.png" alt="Apple">Continue with Apple</p>
+                        </div>
+                        <div class="or-divider">
+                            <p>or</p>
+                        </div>
+                        <div class="input-area">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="input-area">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <button id="loginBtn">Login</button>
+                        <p class="forget-password"><a href="javascript:void(0);" onclick="showForgotPasswordForm()">Forget your password?</a></p>
+                    </div>
+                </div>
+                <div class="form-bg-rel-forget">
+                    <div class="form-container hidden" id="forgotPasswordForm">
+                        <h2 class="form-title">Reset Password</h2>
+                        <input type="email" id="resetEmail" placeholder="Enter your email" required>
+                        <button id="resetBtn">Reset Password</button>
+                        <button id="backToLogin" onclick="showLoginForm()">Back to Login</button>
+                    </div>
+                </div>
+                <style>
+                    .log-google, .log-apple{
+                        border-radius: 8px;
+                        border: 1.5px solid #D3D3D3;
+                        padding: 14px;
+                        margin-bottom: 15px;
+                    }
+                    .log-google > p, .log-apple > p{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 8px;
+                        color: #414141;
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px;
+                    }
+                    .log-google > p > img, .log-apple > p > img {
+                        width: 22px;
+                        position: relative;
+                        top: -3px;
+                    }
+                    .or-divider {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                    }
+                    .or-divider p {
+                        margin: 0;
+                        padding: 0 10px; 
+                        color: #D3D3D3;
+                        text-align: center;
+                        font-family: "Nunito Sans";
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px;
+                    }
+                    .or-divider::before,
+                    .or-divider::after {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        width: 170px; 
+                        height: 1px;
+                        background-color: #D3D3D3; 
+                    }
+
+                    .or-divider::before {
+                        left: 0;
+                        transform: translateY(-50%);
+                    }
+
+                    .or-divider::after {
+                        right: 0;
+                        transform: translateY(-50%);
+                    }
+
+                    .header-bg.header-bg-sub {
+                        background-image: url('../images/lotto-jax-sub-thumnail.png');
+                        padding: 0px 0px 220px 0px;
+                    }
+                    .form-bg {
+                        position: relative;
+                        min-height: 550px;
+                        padding: 60px 0;
+                    }
+                    .form-bg-rel {
+                        position: absolute;
+                        top: 50%; 
+                        left: 50%; 
+                        transform: translate(-50%, -50%); 
+                        width: 100%; 
+                        z-index: 10;
+                    }
+                    .form-container {
+                        background: white;
+                        padding: 60px 50px;
+                        border-radius: 30px;
+                        width: 480px;
+                        margin: 0px auto;
+                        border: 1px solid #efefef;
+                    }
+                    .form-title {
+                        color: #000;
+                        text-align: center;
+                        font-family: "Nunito Sans";
+                        font-size: 34px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: 40px; 
+                        text-transform: capitalize;
+                    }
+                    .form-title-p {
+                        color: #4d4a4a;
+                        text-align: center;
+                        font-family: "Nunito Sans";
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 34px;
+                        padding: 8px 0px 25px 0px;
+                    }
+                    .input-area label{
+                        color: #414141;
+                        font-family: "Nunito Sans";
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px; 
+                    }
+                    input {
+                        width: calc(100% - 0px);
+                        padding: 17px 18px;
+                        margin: 10px 0;
+                        border: 0px;
+                        color: rgba(0, 0, 0, 0.50);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        border-radius: 8px;
+                        border: 1.5px solid #D3D3D3;
+                    }
+                    input#terms {
+                        width: 30px;
+                    }
+                    small {
+                        display: block;
+                        font-size: 12px;
+                        color: gray;
+                        margin-bottom: 12px;
+                        padding: 0px 17px;
+                        text-align: left;
+                    }
+                    .checkbox {
+                        display: flex;
+                        align-items: baseline;
+                        font-size: 14px;
+                        margin: 10px 0 20px 0px;
+                        text-align: left;
+                        padding: 0px 17px;
+                        color: rgba(0, 0, 0, 0.80);
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px;
+                    }
+                    .checkbox input {
+                        margin-right: 8px;
+                        position: relative;
+                        top: 2px;
+                    }
+                    .form-container button {
+                        width: calc(100% - 0px);
+                        padding: 16px;
+                        border-radius: 8px;
+                        background: #000;
+                        border: none;
+                        cursor: pointer;
+                        color: #FFF;
+                        text-align: center;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        transition: background 0.3s;
+                        margin: 12px 0px 30px 0px;
+                    }
+                    .form-container button#resetBtn{
+                        margin-bottom: 15px !important;
+                    }
+                    .form-container button#backToLogin{
+                        background: #e6e7e6 !important;
+                        color: #000000 !important;
+                        margin: 0px !important;
+                    }
+                    .form-container button:hover {
+                        background: #96030f;
+                    }
+                    .login-link {
+                        margin: 30px 0px 15px 0px;
+                        color: #000;
+                        text-align: center;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 22px; 
+                    }
+                    .login-link a {
+                        color: #008CFF;
+                        text-decoration: underline;
+                        font-weight: 400;
+                    }
+                    .login-link a:hover {
+                        color: #008CFF;
+                    }
+                    .hidden{
+                        display: none;
+                    }
+                    .forget-password{
+                        color: #000;
+                        text-align: center;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22px;
+                        text-decoration-line: underline;
+                        text-decoration-style: solid;
+                        text-decoration-skip-ink: none;
+                        text-decoration-thickness: auto;
+                        text-underline-offset: auto;
+                        text-underline-position: from-font;
+                    }
+                    .forget-password a{
+                        color: #000 !important;
+                    }
+                    @media (max-width: 768px){
+                        .form-container {
+                            padding: 40px 20px;
+                            border-radius: 20px;
+                            width: 100%;
+                        }
+                        .header-bg.header-bg-sub {
+                            padding: 0px 0px 115px 0px;
+                        }
+                        .form-bg-rel {
+                            position: relative;
+                            top: 0;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                            width: 100%;
+                            z-index: 10;
+                        }
+                        .form-bg {
+                            position: relative;
+                            min-height: auto;
+                            padding: 50px 0 0px 0px;
+                        }
+                        .or-divider::before, .or-divider::after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            width: 150px;
+                            height: 1px;
+                            background-color: #D3D3D3;
+                        }
+                    }
+                </style>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const loginForm = document.getElementById("loginForm");
+                        const forgotPasswordForm = document.getElementById("forgotPasswordForm");
+                        const emailInput = document.getElementById("email");
+                        const passwordInput = document.getElementById("password");
+                        const loginButton = document.getElementById("loginBtn");
+                        const resetEmailInput = document.getElementById("resetEmail");
+                        const resetButton = document.getElementById("resetBtn");
+            
+                        // Handle Login with Google
+                        document.querySelector(".log-google").addEventListener("click", function () {
+                            // Add Google login logic here
+                            alert("Redirecting to Google Login...");
+                            window.location.href = "google-login-url"; // Replace with actual Google login URL
+                        });
+            
+                        // Handle Login with Apple
+                        document.querySelector(".log-apple").addEventListener("click", function () {
+                            // Add Apple login logic here
+                            alert("Redirecting to Apple Login...");
+                            window.location.href = "apple-login-url"; // Replace with actual Apple login URL
+                        });
+            
+                        // Handle Login button
+                        loginButton.addEventListener("click", function (event) {
+                            event.preventDefault();
+            
+                            const email = emailInput.value.trim();
+                            const password = passwordInput.value.trim();
+            
+                            if (!email || !password) {
+                                alert("Please enter both email and password.");
+                                return;
+                            }
+            
+                            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                            if (!emailPattern.test(email)) {
+                                alert("Please enter a valid email address.");
+                                return;
+                            }
+            
+                            if (password.length < 6) {
+                                alert("Password must be at least 6 characters long.");
+                                return;
+                            }
+            
+                            alert("Login successful!");
+                            window.location.href = "index.html";
+                        });
+            
+                        // Show Forgot Password Form
+                        window.showForgotPasswordForm = function () {
+                            loginForm.classList.add("hidden");
+                            forgotPasswordForm.classList.remove("hidden");
+                        };
+            
+                        // Handle Password Reset
+                        resetButton.addEventListener("click", function (event) {
+                            event.preventDefault();
+            
+                            const resetEmail = resetEmailInput.value.trim();
+                            if (!resetEmail) {
+                                alert("Please enter your email.");
+                                return;
+                            }
+            
+                            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                            if (!emailPattern.test(resetEmail)) {
+                                alert("Please enter a valid email address.");
+                                return;
+                            }
+            
+                            alert("A password reset link has been sent to your email.");
+                        });
+            
+                        // Back to Login
+                        window.showLoginForm = function () {
+                            forgotPasswordForm.classList.add("hidden");
+                            loginForm.classList.remove("hidden");
+                        };
+                    });
+                </script>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="responsible-context">
+                    <h2>Responsible Gaming</h2>
+                    <p>At Lotto Jaxx, your well-being is our priority. For assistance, contact Gambling Help at 1800 858 858 or visit GambleAware at gambleaware.nsw.gov.au. BetStop is Australia’s official self-exclusion service, offering free and confidential support. Lotto Jaxx operates under an Australian Government license, adhering to the highest standards of responsible gambling. Managed by The Australian Group Limited, our logo is a registered trademark. Gambling is strictly for individuals aged 18 and above, and we prevent underage gambling in line with Australian law.</p>
+                </div>
+                
+                <ul class="brand-logos">
+                    <li>
+                        <a>
+                            <img src="images/footer-1.png" alt="Brand 1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.gambleaware.org/" target="_blank">
+                            <img src="images/footer-2.png" alt="Brand 2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.gamblinghelponline.org.au/">
+                            <img src="images/footer-4.png" alt="Brand 4">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.nhs.uk/live-well/addiction-support/gambling-addiction/">
+                            <img src="images/footer-5.png" alt="Brand 5">
+                        </a>
+                    </li>
+                </ul>
+                
+                <p class="footer-mddle-text">
+                    Think! About your choices. Gamble responsibly. Call Gambling Help on 1800 858 858. GambleAware. We are committed to Responsible Gambling. Persons under 18 years of age are not permitted to gamble.
+                </p>
+                
+                <ul class="info-links">
+                    <li>
+                        <a href="https://lottojaxx.com">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://lottojaxx.com/responsible-gaming">Responsible Gaming</a>
+                    </li>
+                    <li>
+                        <a href="https://lottojaxx.com/anj-arjel">ANJ / Arjel</a>
+                    </li>
+                    <li>
+                        <a href="https://lottojaxx.com/privacy-policy">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="https://lottojaxx.com/terms-and-conditions">Terms and Conditions</a>
+                    </li>
+                    <li>
+                        <a href="https://lottojaxx.com/cookies-policy">Cookies Policy</a>
+                    </li>
+                    <li>
+                        <a href="https://lottojaxx.com/contact">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="copyright">
+                    <p>Copyright ©2025 Lotto Jaxx | All rights reserved.</p>
+                </div>
+            </div>
+        </footer>        
+    </body>
+</html>

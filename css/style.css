@@ -1,0 +1,731 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+.container{
+    width: 84%;
+    max-width: 1365px;
+    margin: 0 auto;
+}
+.top-bar{
+    background: #000;
+    padding: 10px 8px 6px 8px;
+    text-align: center;
+}
+.top-bar > p {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-flex;
+    align-items: center;
+}
+.top-bar > p > img{
+    width: 20px;
+    margin-right: 8px;
+}
+.header-bg {
+    background-image: url('../images/lotto-jaxx-thumbnail.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    clip-path: ellipse(72% 100% at 50% 0%);
+}
+.header-bg::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.58) 27.32%, rgba(0, 0, 0, 0.90) 102.28%);
+}
+.menu-bar-bg{
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(25px);
+}
+.menu-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0px;
+}
+.logo-area > img{
+    width: 100%;
+    height: auto;
+}
+.menu-btn > a > button{
+    border-radius: 100px;
+    width: 120px;
+    height: 44px;
+    padding: 10px;
+    outline: 0px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.menu-btn > a{
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+button.log-in-btn{
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    background-color: transparent;
+    margin-right: 6px;
+}
+button.register-btn{
+    background: #FFF;
+    color: #000;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    border: 0px;
+}
+.banner-context{
+    padding: 130px 0px 150px 0px;
+    text-align: center;
+}
+.banner-context > h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; 
+}
+.banner-context > h1 > span{
+    color: #AEFE3A;
+}
+.banner-context > p{
+    color: rgba(255, 255, 255, 0.918);
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px 0px;
+}
+.banner-context > a{
+    text-decoration: none;
+}
+button.banner-btn{
+    border-radius: 100px;
+    background: #AEFE3A;
+    padding: 12px 24px;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    outline: 0px;
+    border: 0px;
+    margin: 15px 0px;
+}
+.about-section{
+    padding: 60px 0px;
+}
+.left-image-about{
+    position: relative;
+}
+img.left-img-1{
+    width: 140px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 25px;
+}
+img.left-img-2 {
+    width: 170px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 245px;
+}
+.right-image-about{
+    position: relative;
+}
+img.right-img-1 {
+    width: 170px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: -225px;
+}
+.about-context{
+    text-align: center;
+    padding: 0px 65px;
+}
+.about-context > h2 {
+    color: #000;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 50px;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+}
+.about-context > p{
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.reviews-count {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+    padding-top: 45px;
+}
+.review-context > h3{
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 50px; 
+    text-transform: capitalize;
+}
+.review-context > p{
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+}
+.time-section{
+    padding: 40px 0px;
+}
+.time-bg{
+    background: #000;
+}
+.time-flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 40px;
+    gap: 4px;
+}
+.time-context {
+    width: 350px;
+}
+.time-context > h2{
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.time-context > p{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+button.time-btn{
+    border-radius: 100px;
+    background: #FFF;
+    border: 0px;
+    outline: 0px;
+    padding: 12px 24px;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 25px 0px 0px 0px;
+}
+.time-ball-img {
+    position: relative;
+    z-index: 1;
+}
+.time-ball-img > img {
+    width: 550px;
+    height: auto;
+    flex-shrink: 0;
+    position: absolute;
+    right: -140px;
+    top: -94px;
+}
+.time-count-area {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    gap: 6px;
+    padding-bottom: 8px;
+}
+.days > span,
+.hours > span,
+.minutes > span,
+.seconds > span{
+    border-radius: 10px;
+    background: #AEFE3A;
+    display: inline-flex;
+    height: 60px;
+    margin: 0 4px; 
+    padding: 8px 16px; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    grid-area: 20px;
+}
+span.colon {
+    color: #AEFE3A;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+    top: -22px;
+}
+.time-count-context > p{
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; 
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 8px;
+}
+.draw-section{
+    padding: 40px 0px;
+}
+.draw-title{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.draw-title > h2{
+    color: #000;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.draw-title > p{
+    color: #000;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.draw-flex{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.draw-area{
+    width: 70%;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+}
+.draw-winner-area{
+    width: 30%;
+}
+.draw-table-title > h3{
+    color: #000;
+    font-family: "Nunito Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; 
+    padding: 30px;
+}
+.draw-table-flex{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #F8F9FA;
+    padding: 15px 30px;
+}
+.draw-table-name > p{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; 
+}
+.draw-winner-table-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 24px 30px;border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+.draw-winner-table-grid:last-child{
+    border-bottom: 0px;
+}
+.draw-table-name.w-n {
+    width: 308px;
+}
+.winner-brand > h4,
+.draw-date > p{
+    color: #000;
+    font-family: "Nunito Sans";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+}
+.draw-number{
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+    align-items: center;
+    width: 308px;
+}
+.draw-number > span{
+    border-radius: 100px;
+    border: 1px solid #868686;
+    background: #FFF;
+    width: 34.25px;
+    height: 34.25px;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; 
+}
+span.number-green-bg{
+    border-radius: 100px ;
+    border: 1px solid #868686;
+    background: #AEFE3A;
+}
+.draw-winner-area{
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+}
+.draw-winner-title{
+    color: #000;
+    font-family: "Nunito Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; 
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+.winner-list{
+    padding: 24px 30px;
+}
+.winner-list-table{
+    padding-bottom: 25px;
+}
+.winner-list-table > h4{
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+.winner-list-table > p{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+.winner-list-table > small{
+    color: #459500;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+.feedback-section{
+    padding: 60px 0px;
+}
+.feedback-grid{
+    display: flex;
+    align-items: unset;
+    gap: 60px;
+}
+.feedback-players {
+    width: 20%;
+}
+.feedback-card-right{
+    width: 80%;
+}
+.feedback-players > h2{
+    color: #000;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+img.star-img{
+    width: 120px;
+    padding: 12px 0px 5px 0px;
+}
+.feedback-players > h3{
+    color: #000;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 34px; 
+}
+.feedback-players > h3 > span{
+    font-weight: 400;
+    font-size: 16px;
+}
+.feedback-card-right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.feedback-card{
+    border-radius: 30px;
+    border: 1px solid #D3D3D3;
+    background: #FFF;
+    padding: 40px;
+}
+.quotation-area {
+    text-align: center;
+}
+.quotation-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.quotation-area::before,
+.quotation-area::after {
+    content: "";
+    flex: 1;
+    height: 3px;
+    background-color: black; 
+    position: absolute;
+    width: 60px; 
+}
+
+.quotation-area::before {
+    left: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.quotation-area::after {
+    right: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.feedback-text{
+    text-align: center;
+}
+.feedback-text > p{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 25px 0px 15px 0px;
+}
+.feedback-text > h4 {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 5px 0px 16px 0px;
+}
+.player-img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-12%);
+}
+.player-img > img{
+    position: absolute;
+    padding: 6px;
+    background: #FFF;
+    border: 1px solid #D3D3D3;
+    border-radius: 100px;
+    width: 80px;
+    top: 5px;
+}
+.faq-section{
+    padding: 60px 0px;
+    background: #F8F9FA;
+    margin: 80px 0px;
+}
+.faq-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+.faq-img > img{
+    width: 100%;
+    height: auto;
+}
+.faq-area {
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    padding: 30px;
+}
+.faq-section-title > h2{
+    color: #000;
+    text-align: center;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 55px; 
+    padding-bottom: 30px;
+}
+.faq-item {
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    padding: 15px 20px 10px 20px;
+    margin-bottom: 15px;
+}
+.faq-question {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; 
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+}
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+    color: #3a3939;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+.faq-item.active .faq-answer {
+    display: block;
+}
+.toggle-icon {
+    font-size: 26px;
+    transition: transform 0.3s ease;
+}
+.faq-item.active .toggle-icon {
+    transform: rotate(45deg);
+}
+footer {
+    background: #000;
+    clip-path: ellipse(85% 100% at 50% 100%);
+    padding: 100px 60px 30px 60px;
+    margin-top: 100px;
+}
+.responsible-context{
+    text-align: center;
+}
+.responsible-context > h2{
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 55px; 
+    padding-bottom: 20px;
+}
+.responsible-context > p{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+.brand-logos{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 40px 0px 40px 0px;
+}
+.footer-mddle-text{
+    color: rgba(255, 255, 255, 0.80);
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    width: 70%;
+    margin: 0 auto;
+}
+.info-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 40px 0px;
+}
+.info-links > li > a{
+    color: #AEFE3A;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+.copyright{
+    border-top: 1px solid #262626;
+}
+.copyright > p{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    padding: 30px 0px 0px 0px;
+}

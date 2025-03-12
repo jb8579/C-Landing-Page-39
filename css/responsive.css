@@ -1,0 +1,717 @@
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 12px;
+    }
+    .top-bar {
+        padding: 10px 0px;
+    }
+    .menu-btn {
+        display: flex;
+        align-items: center;
+    }
+    .top-bar > p {
+        font-size: 11px;
+        font-weight: 600;
+        display: inline-block;
+    }
+    .top-bar > p > img {
+        width: 18px;
+        margin-right: 2px;
+        position: relative;
+        top: 5px;
+    }
+    .logo-area > img {
+        width: 104px;
+    }
+    .menu-btn > a > button {
+        width: 94px;
+        height: unset;
+        padding: 6px;
+        outline: 0px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .header-bg {
+        clip-path: ellipse(105% 100% at 50% 0%);
+    }
+    .banner-context > h1 {
+        font-size: 40px;
+        font-style: normal;
+        line-height: normal;
+        font-weight: 800;
+    }
+    .banner-context {
+        padding: 80px 0px;
+    }
+    .banner-context > p {
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+        margin: 0 auto;
+        list-style: 32px;
+        padding: 15px 0px;
+    }
+    button.banner-btn {
+        padding: 10px 18px;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        margin: 10px 0px;
+    }
+    .left-image-about,
+    .right-image-about {
+        display: none;
+    }
+    .about-context {
+        padding: 0px;
+    }
+    .about-section {
+        padding: 50px 0px 30px 0px;
+    }
+    .about-context > h2 {
+        font-size: 34px;
+        font-weight: 800;
+        padding-bottom: 20px;
+    }
+    .about-context > p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .reviews-count {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        align-items: center;
+        padding-top: 35px;
+    }
+    .review-context > h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .review-context > p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .time-flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        padding: 30px 12px 0px 12px;
+        gap: 4px;
+    }
+    .time-ball-img > img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        right: 0;
+        top: 6px;
+        left: 0;
+        overflow: hidden;
+    }
+    img.b-desktop {
+        display: none;
+    }
+    .time-context {
+        width: 100%;
+    }
+    .time-count-area {
+        width: 100%;
+        gap: 4px;
+        padding-top: 30px;
+    }
+    .days > span, .hours > span, .minutes > span, .seconds > span {
+        border-radius: 4px;
+        height: 36px;
+        margin: 0px 4px;
+        padding: 6px 8px;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    span.colon {
+        font-size: 34px;
+        top: -18px;
+    }
+    .time-count-context > p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-top: 0px;
+    }
+    button.time-btn {
+        padding: 8px 16px;
+        font-size: 16px;
+        margin: 20px 0px 0px 0px;
+    }
+    .time-context > p {
+        font-size: 14px;
+    }
+    .draw-title {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .draw-title > h2 {
+        font-size: 34px;
+    }
+    .draw-title > p {
+        font-size: 15px;
+        padding-top: 8px;
+    }
+    .draw-flex {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .draw-area {
+        width: 100%;
+    }
+    .draw-table-name.w-n {
+        width: 150px;
+    }
+    .draw-table-name > p {
+        font-size: 13px;
+    }
+    .draw-number > span {
+        width: 20.25px;
+        height: 20.25px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .draw-number {
+        display: flex;
+        gap: 2px;
+        width: 100%;
+    }
+    .winner-brand > h4, .draw-date > p {
+        font-size: 12px;
+    }
+    .draw-winner-table-grid {
+        padding: 12px 12px;
+    }
+    .draw-table-flex {
+        padding: 8px 12px;
+    }
+    .draw-winner-area {
+        width: 100%;
+    }
+    .draw-table-title > h3,
+    .draw-winner-title {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 20px 12px;
+    }
+    .winner-list {
+        padding: 20px 12px;
+    }
+    .winner-list-table > h4 {
+        font-size: 16px;
+    }
+    .draw-section {
+        padding: 30px 0px;
+    }
+    .feedback-section {
+        padding: 30px 0px 70px 0px;
+        overflow: hidden;
+    }
+    .feedback-grid {
+        display: flex;
+        align-items: unset;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .feedback-players {
+        width: 100%;
+        text-align: center;
+    }
+    .feedback-players > h2 {
+        font-size: 34px;
+        padding-bottom: 18px;
+    }
+    .feedback-players > img {
+        width: 155px;
+        display: flex;
+        margin: 0 auto;
+    }
+    img.star-img {
+        width: 105px !important;
+        padding: 12px 0px 5px 0px;
+    }
+    .feedback-card-right {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 90px;
+    }
+    .feedback-card-right {
+        width: 100%;
+    }
+    .feedback-card {
+        padding: 20px;
+    }
+    .feedback-text > p {
+        font-size: 14px;
+        padding: 20px 0px 10px 0px;
+    }
+    .faq-img {
+        display: none;
+    }
+    .faq-flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+        align-items: center;
+    }
+    .faq-section-title > h2 {
+        font-size: 34px;
+        line-height: 40px;
+        padding-bottom: 20px;
+    }
+    .faq-question {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 8px;
+    }
+    .faq-answer {
+        padding: 10px 0;
+        font-size: 14px;
+        line-height: normal;
+    }
+    .faq-area {
+        padding: 20px 12px;
+    }
+    .faq-section {
+        padding: 40px 0px;
+        margin: 60px 0px;
+    }
+    footer {
+        clip-path: ellipse(245% 100% at 50% 100%);
+        padding: 60px 0px 30px 0px;
+        margin-top: 50px;
+    }
+    .responsible-context > h2 {
+        font-size: 34px;
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
+    .responsible-context > p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .brand-logos {
+        flex-wrap: wrap;
+    }
+    .footer-mddle-text {
+        width: 100%;
+    }
+    .info-links {
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 370px) and (min-width: 300px){
+    .days > span, .hours > span, .minutes > span, .seconds > span {
+        border-radius: 4px;
+        height: 30px;
+        margin: 0px 3px;
+        padding: 4px 6px;
+        font-size: 16px;
+        font-weight: 800;
+    }
+    .header-bg {
+        clip-path: ellipse(155% 100% at 50% 0%);
+    }
+}
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+    .player-img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-6%);
+    }
+    .quotation-area::before {
+        left: 30%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .quotation-area::after {
+        right: 30%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+@media only screen and (max-width: 868px) and (min-width: 768px){
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+    .top-bar {
+        padding: 10px 0px;
+    }
+    .menu-btn {
+        display: flex;
+        align-items: center;
+    }
+    .top-bar > p {
+        font-size: 11px;
+        font-weight: 600;
+        display: inline-block;
+    }
+    .top-bar > p > img {
+        width: 18px;
+        margin-right: 2px;
+        position: relative;
+        top: 5px;
+    }
+    .logo-area > img {
+        width: 104px;
+    }
+    .menu-btn > a > button {
+        width: 94px;
+        height: unset;
+        padding: 6px;
+        outline: 0px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .header-bg {
+        clip-path: ellipse(105% 100% at 50% 0%);
+    }
+    .banner-context > h1 {
+        font-size: 40px;
+        font-style: normal;
+        line-height: normal;
+        font-weight: 800;
+    }
+    .banner-context {
+        padding: 80px 0px;
+    }
+    .banner-context > p {
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+        margin: 0 auto;
+        list-style: 32px;
+        padding: 15px 0px;
+    }
+    button.banner-btn {
+        padding: 10px 18px;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        margin: 10px 0px;
+    }
+    .left-image-about,
+    .right-image-about {
+        display: none;
+    }
+    .about-context {
+        padding: 0px;
+    }
+    .about-section {
+        padding: 50px 0px 30px 0px;
+    }
+    .about-context > h2 {
+        font-size: 34px;
+        font-weight: 800;
+        padding-bottom: 20px;
+    }
+    .about-context > p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .reviews-count {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        align-items: center;
+        padding-top: 35px;
+    }
+    .review-context > h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .review-context > p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .time-flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        padding: 30px 12px 0px 12px;
+        gap: 4px;
+    }
+    .time-ball-img > img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        right: 0;
+        top: 0px;
+        left: 0;
+        overflow: hidden;
+    }
+    img.b-desktop {
+        display: none;
+    }
+    img.b-sm {
+        display: block !important;
+    }
+    .time-context {
+        width: 100%;
+        text-align: center;
+    }
+    .time-count-area {
+        width: 100%;
+        gap: 4px;
+        padding-top: 30px;
+    }
+    .days > span, .hours > span, .minutes > span, .seconds > span {
+        border-radius: 4px;
+        height: 60px;
+        margin: 0px 4px;
+        padding: 12px 18px;
+        font-size: 34px;
+        font-weight: 800;
+    }
+    span.colon {
+        font-size: 34px;
+        top: -18px;
+    }
+    .time-count-context > p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-top: 0px;
+    }
+    button.time-btn {
+        padding: 8px 16px;
+        font-size: 16px;
+        margin: 20px 0px 30px 0px;
+    }
+    .time-context > p {
+        font-size: 14px;
+    }
+    .draw-title {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .draw-title > h2 {
+        font-size: 34px;
+    }
+    .draw-title > p {
+        font-size: 15px;
+        padding-top: 8px;
+    }
+    .draw-flex {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .draw-area {
+        width: 100%;
+    }
+    .draw-table-name.w-n {
+        width: 150px;
+    }
+    .draw-table-name > p {
+        font-size: 13px;
+    }
+    .draw-number > span {
+        width: 20.25px;
+        height: 20.25px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .draw-number {
+        display: flex;
+        gap: 2px;
+        width: 100%;
+    }
+    .winner-brand > h4, .draw-date > p {
+        font-size: 12px;
+    }
+    .draw-winner-table-grid {
+        padding: 12px 12px;
+    }
+    .draw-table-flex {
+        padding: 8px 12px;
+    }
+    .draw-winner-area {
+        width: 100%;
+    }
+    .draw-table-title > h3,
+    .draw-winner-title {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 20px 12px;
+    }
+    .winner-list {
+        padding: 20px 12px;
+    }
+    .winner-list-table > h4 {
+        font-size: 16px;
+    }
+    .draw-section {
+        padding: 30px 0px;
+    }
+    .feedback-section {
+        padding: 30px 0px 70px 0px;
+        overflow: hidden;
+    }
+    .feedback-grid {
+        display: flex;
+        align-items: unset;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .feedback-players {
+        width: 100%;
+        text-align: center;
+    }
+    .feedback-players > h2 {
+        font-size: 34px;
+        padding-bottom: 18px;
+    }
+    .feedback-players > img {
+        width: 155px;
+        display: flex;
+        margin: 0 auto;
+    }
+    img.star-img {
+        width: 105px !important;
+        padding: 12px 0px 5px 0px;
+    }
+    .feedback-card-right {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 90px;
+    }
+    .feedback-card-right {
+        width: 100%;
+    }
+    .player-img {
+        transform: translateX(-6%);
+    }
+    .feedback-card {
+        padding: 20px;
+    }
+    .feedback-text > p {
+        font-size: 14px;
+        padding: 20px 0px 10px 0px;
+    }
+    .faq-img {
+        display: none;
+    }
+    .faq-flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+        align-items: center;
+    }
+    .faq-section-title > h2 {
+        font-size: 34px;
+        line-height: 40px;
+        padding-bottom: 20px;
+    }
+    .faq-question {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 8px;
+    }
+    .faq-answer {
+        padding: 10px 0;
+        font-size: 14px;
+        line-height: normal;
+    }
+    .faq-area {
+        padding: 20px 12px;
+    }
+    .faq-section {
+        padding: 40px 0px;
+        margin: 60px 0px;
+    }
+    footer {
+        clip-path: ellipse(245% 100% at 50% 100%);
+        padding: 60px 0px 30px 0px;
+        margin-top: 50px;
+    }
+    .responsible-context > h2 {
+        font-size: 34px;
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
+    .responsible-context > p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .brand-logos {
+        flex-wrap: wrap;
+    }
+    .footer-mddle-text {
+        width: 100%;
+    }
+    .info-links {
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 1150px){
+    .time-ball-img > img {
+        width: 550px;
+        height: auto;
+        flex-shrink: 0;
+        position: absolute;
+        right: -128px;
+        top: -94px;
+        filter: blur(3px);
+    }
+}
+@media only screen and (max-width: 1150px) and (min-width: 869px){
+    .container {
+        width: 94%;
+        max-width: 1365px;
+        margin: 0 auto;
+    }
+    .time-ball-img > img {
+        width: 550px;
+        height: auto;
+        flex-shrink: 0;
+        position: absolute;
+        right: -43px;
+        top: -94px;
+        filter: blur(5px);
+    }
+    .left-image-about {
+        top: -165px;
+    }
+    img.right-img-1 {
+        width: 120px;
+        height: auto;
+        position: absolute;
+        right: 0;
+        top: -110px;
+    }
+    .draw-flex {
+        gap: 15px;
+    }
+    .faq-area {
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.20);
+        background: #FFF;
+        padding: 30px;
+        min-width: 580px;
+    }
+    .feedback-section {
+        padding: 60px 0px;
+        overflow-x: hidden;
+    }
+    img.left-img-2 {
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 575px){
+    img.b-sm{
+        display: none;
+    }
+}
