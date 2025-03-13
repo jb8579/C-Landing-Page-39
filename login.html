@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lotto Jaxx - Play & Win Big!</title>
+        <title>Lotto Jaxx - Spielen & Groß Gewinnen!</title>
         <link rel="shortcut icon" href="images/fav-icon.webp" type="image/x-icon">
-        <meta name="description" content="Lotto Jaxx is your go-to platform for thrilling lottery games and big winnings. Play now and boost your chances to win!">
-        <meta name="keywords" content="Lotto Jaxx, online lottery, jackpot games, win lottery, play lotto online, lottery results">
+        <meta name="description" content="Lotto Jaxx ist Ihre Plattform für aufregende Lotteriespiele und große Gewinne. Spielen Sie jetzt und erhöhen Sie Ihre Gewinnchancen!">
+        <meta name="keywords" content="Lotto Jaxx, Online-Lotterie, Jackpot-Spiele, Lotterie gewinnen, Lotto online spielen, Lotterieergebnisse">
         <meta name="author" content="Lotto Jaxx">
-        <meta property="og:title" content="Lotto Jaxx - Play & Win Big!">
-        <meta property="og:description" content="Join Lotto Jaxx for exciting lottery games and massive prizes. Play now and hit the jackpot!">
+        <meta property="og:title" content="Lotto Jaxx - Spielen & Groß Gewinnen!">
+        <meta property="og:description" content="Treten Sie Lotto Jaxx bei für spannende Lotteriespiele und riesige Gewinne. Spielen Sie jetzt und knacken Sie den Jackpot!">
         <meta property="og:url" content="https://lottojaxx.com">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://lottojaxx.com/images/lotto-jaxx-thumbnail.png">
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Lotto Jaxx - Play & Win Big!">
-        <meta name="twitter:description" content="Your gateway to the biggest lottery games and winnings. Play with Lotto Jaxx today!">
+        <meta name="twitter:title" content="Lotto Jaxx - Spielen & Groß Gewinnen!">
+        <meta name="twitter:description" content="Ihr Zugang zu den größten Lotteriespielen und Gewinnen. Spielen Sie noch heute mit Lotto Jaxx!">
         <meta name="twitter:image" content="https://lottojaxx.com/images/lotto-jaxx-thumbnail.png">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
@@ -26,21 +26,23 @@
     <body>
         <header>
             <div class="top-bar">
-                <p><img src="images/eighten-warn.png" alt="Age Warning Icon">Accessible only to persons aged 18 and over. Please gamble responsibly.</p>
+                <p><img src="images/eighten-warn.png" alt="Alterswarnungssymbol">Zugänglich nur für Personen ab 18 Jahren. Bitte spielen Sie verantwortungsbewusst.</p>
             </div>
             <div class="header-bg header-bg-sub">
                 <div class="menu-bar-bg">
                     <div class="container">
                         <div class="menu-bar">
                             <div class="logo-area">
-                                <img src="images/lotto-jaxx-logo.png" alt="Lotto Jaxx Logo">
+                                <a href="/">
+                                    <img src="images/lotto-jaxx-logo.png" alt="Lotto Jaxx Logo">
+                                </a>
                             </div>
                             <div class="menu-btn">
                                 <a href="login.html">
-                                    <button class="log-in-btn">Login</button>
+                                    <button class="log-in-btn">Anmelden</button>
                                 </a>
                                 <a href="register.html">
-                                    <button class="register-btn">Register</button>
+                                    <button class="register-btn">Registrieren</button>
                                 </a>
                             </div>
                         </div>
@@ -52,35 +54,35 @@
             <section class="form-bg">
                 <div class="form-bg-rel">
                     <div class="form-container" id="loginForm">
-                        <h2 class="form-title">Welcome back</h2>
-                        <p class="form-title-p">Enter your details to Log In to your account</p>
+                        <h2 class="form-title">Willkommen zurück</h2>
+                        <p class="form-title-p">Geben Sie Ihre Daten ein, um sich in Ihr Konto einzuloggen</p>
                         <div class="log-google">
-                            <p><img src="images/Google.png" alt="Google">Continue with Google</p>
+                            <p><img src="images/Google.png" alt="Google">Weiter mit Google</p>
                         </div>
                         <div class="log-apple">
-                            <p><img src="images/apple.png" alt="Apple">Continue with Apple</p>
+                            <p><img src="images/apple.png" alt="Apple">Weiter mit Apple</p>
                         </div>
                         <div class="or-divider">
-                            <p>or</p>
+                            <p>oder</p>
                         </div>
                         <div class="input-area">
-                            <label for="email">Email</label>
+                            <label for="email">E-Mail</label>
                             <input type="email" id="email" required>
                         </div>
                         <div class="input-area">
-                            <label for="password">Password</label>
+                            <label for="password">Passwort</label>
                             <input type="password" id="password" required>
                         </div>
-                        <button id="loginBtn">Login</button>
-                        <p class="forget-password"><a href="javascript:void(0);" onclick="showForgotPasswordForm()">Forget your password?</a></p>
+                        <button id="loginBtn">Anmelden</button>
+                        <p class="forget-password"><a href="javascript:void(0);" onclick="showForgotPasswordForm()">Passwort vergessen?</a></p>
                     </div>
                 </div>
                 <div class="form-bg-rel-forget">
                     <div class="form-container hidden" id="forgotPasswordForm">
-                        <h2 class="form-title">Reset Password</h2>
-                        <input type="email" id="resetEmail" placeholder="Enter your email" required>
-                        <button id="resetBtn">Reset Password</button>
-                        <button id="backToLogin" onclick="showLoginForm()">Back to Login</button>
+                        <h2 class="form-title">Passwort zurücksetzen</h2>
+                        <input type="email" id="resetEmail" placeholder="Geben Sie Ihre E-Mail-Adresse ein" required>
+                        <button id="resetBtn">Passwort zurücksetzen</button>
+                        <button id="backToLogin" onclick="showLoginForm()">Zurück zum Login</button>
                     </div>
                 </div>
                 <style>
@@ -128,7 +130,7 @@
                         content: "";
                         position: absolute;
                         top: 50%;
-                        width: 170px; 
+                        width: 150px; 
                         height: 1px;
                         background-color: #D3D3D3; 
                     }
@@ -172,7 +174,7 @@
                         color: #000;
                         text-align: center;
                         font-family: "Nunito Sans";
-                        font-size: 34px;
+                        font-size: 30px;
                         font-style: normal;
                         font-weight: 800;
                         line-height: 40px; 
@@ -182,11 +184,11 @@
                         color: #4d4a4a;
                         text-align: center;
                         font-family: "Nunito Sans";
-                        font-size: 17px;
+                        font-size: 16px;
                         font-style: normal;
-                        font-weight: 400;
-                        line-height: 34px;
-                        padding: 8px 0px 25px 0px;
+                        font-weight: 500;
+                        line-height: normal;
+                        padding: 4px 0px 25px 0px;
                     }
                     .input-area label{
                         color: #414141;
@@ -250,7 +252,6 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: 20px;
-                        text-transform: uppercase;
                         transition: background 0.3s;
                         margin: 12px 0px 30px 0px;
                     }
@@ -328,7 +329,7 @@
                             content: "";
                             position: absolute;
                             top: 50%;
-                            width: 150px;
+                            width: 130px;
                             height: 1px;
                             background-color: #D3D3D3;
                         }
@@ -422,8 +423,8 @@
         <footer>
             <div class="container">
                 <div class="responsible-context">
-                    <h2>Responsible Gaming</h2>
-                    <p>At Lotto Jaxx, your well-being is our priority. For assistance, contact Gambling Help at 1800 858 858 or visit GambleAware at gambleaware.nsw.gov.au. BetStop is Australia’s official self-exclusion service, offering free and confidential support. Lotto Jaxx operates under an Australian Government license, adhering to the highest standards of responsible gambling. Managed by The Australian Group Limited, our logo is a registered trademark. Gambling is strictly for individuals aged 18 and above, and we prevent underage gambling in line with Australian law.</p>
+                    <h2>Verantwortungsbewusstes Spielen</h2>
+                    <p>Bei Lotto Jaxx steht Ihr Wohlbefinden an erster Stelle. Für Unterstützung kontaktieren Sie Gambling Help unter 1800 858 858 oder besuchen Sie GambleAware unter gambleaware.nsw.gov.au. BetStop ist Australiens offizielle Selbstsperrdienstleistung und bietet kostenlose sowie vertrauliche Unterstützung. Lotto Jaxx arbeitet unter einer Lizenz der australischen Regierung und hält sich an die höchsten Standards des verantwortungsbewussten Spielens. Verwaltet von The Australian Group Limited, ist unser Logo eine eingetragene Marke. Glücksspiel ist ausschließlich für Personen ab 18 Jahren erlaubt, und wir setzen strenge Maßnahmen zur Verhinderung von Minderjährigen-Glücksspiel gemäß australischem Recht durch.</p>
                 </div>
                 
                 <ul class="brand-logos">
@@ -433,54 +434,63 @@
                         </a>
                     </li>
                     <li>
+                        <a href="https://gluecksspiel-behoerde.de/de/" target="_blank">
+                            <img src="images/footer-6.png" alt="Brand 2">
+                        </a>
+                    </li>
+                    <li>
                         <a href="https://www.gambleaware.org/" target="_blank">
                             <img src="images/footer-2.png" alt="Brand 2">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.gamblinghelponline.org.au/">
-                            <img src="images/footer-4.png" alt="Brand 4">
+                        <a href="https://www.gamcare.org.uk/">
+                            <img src="images/footer-7.png" alt="Brand 4">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.nhs.uk/live-well/addiction-support/gambling-addiction/">
+                        <a href="https://www.gamblinghelponline.org.au/">
                             <img src="images/footer-5.png" alt="Brand 5">
                         </a>
                     </li>
                 </ul>
                 
                 <p class="footer-mddle-text">
-                    Think! About your choices. Gamble responsibly. Call Gambling Help on 1800 858 858. GambleAware. We are committed to Responsible Gambling. Persons under 18 years of age are not permitted to gamble.
+                    Hinweis: Bei Rückfragen zu Ihrem JAXX-Konto ist unser freundliches Team der Kundenbetreuung weiterhin für Sie erreichbar unter info@lotto-jaxx.de oder der kostenfreien Rufnummer 0800 649 64 99 (Mo.-So. von 10.00-19.00 Uhr).
                 </p>
-                
                 <ul class="info-links">
                     <li>
-                        <a href="https://lottojaxx.com">Home</a>
+                        <a href="/">Startseite</a>
                     </li>
                     <li>
-                        <a href="https://lottojaxx.com/responsible-gaming">Responsible Gaming</a>
+                        <a href="responsible-gaming.html">Verantwortungsbewusstes Spielen</a>
                     </li>
                     <li>
-                        <a href="https://lottojaxx.com/anj-arjel">ANJ / Arjel</a>
+                        <a href="privacy-policy.html">Datenschutzrichtlinie</a>
                     </li>
                     <li>
-                        <a href="https://lottojaxx.com/privacy-policy">Privacy Policy</a>
+                        <a href="terms-and-conditions.html">Allgemeine Geschäftsbedingungen</a>
                     </li>
                     <li>
-                        <a href="https://lottojaxx.com/terms-and-conditions">Terms and Conditions</a>
+                        <a href="cookies-policy.html">Cookie-Richtlinie</a>
                     </li>
                     <li>
-                        <a href="https://lottojaxx.com/cookies-policy">Cookies Policy</a>
-                    </li>
-                    <li>
-                        <a href="https://lottojaxx.com/contact">Contact</a>
+                        <a href="mailto:support@lottojax.de.com">Kontakt</a>
                     </li>
                 </ul>
-                
                 <div class="copyright">
-                    <p>Copyright ©2025 Lotto Jaxx | All rights reserved.</p>
+                    <p>OnGoingMedia GmbH, Behringstr. 28a Haus 2, 22765 Hamburg
+                        <br>
+                        Geschäftsführer: Christoph Tonn, Thomas Hauck
+                        <br>
+                        Amtsgericht Hamburg HRB 119091 
+                        <br>
+                        USt.-ID DE 283009776
+                        <br><br>
+                        Die OnGoingMedia GmbH verfügt über eine offizielle <a target="_blank" href="https://www.gluecksspiel-behoerde.de/de/erlaubnisfaehigesgluecksspiel/whitelist">Lotterievermittlungserlaubnis</a> der Gemeinsamen Glücksspielbehörde der Länder (GGL) und steht auf der entsprechenden <a target="_blank" href="https://www.gluecksspiel-behoerde.de/de/erlaubnisfaehigesgluecksspiel/whitelist">Whitelist.</a>
+                    </p>
                 </div>
             </div>
-        </footer>        
+        </footer>      
     </body>
 </html>

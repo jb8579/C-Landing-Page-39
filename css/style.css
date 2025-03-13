@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: "Nunito Sans", sans-serif;
 }
+button{
+    cursor: pointer;
+}
 .container{
     width: 84%;
     max-width: 1365px;
@@ -98,13 +101,13 @@ button.register-btn{
     border: 0px;
 }
 .banner-context{
-    padding: 130px 0px 150px 0px;
+    padding: 110px 0px 120px 0px;
     text-align: center;
 }
 .banner-context > h1{
     color: #FFF;
     text-align: center;
-    font-size: 64px;
+    font-size: 62px;
     font-style: normal;
     font-weight: 700;
     line-height: 70px; 
@@ -268,12 +271,12 @@ button.time-btn{
     z-index: 1;
 }
 .time-ball-img > img {
-    width: 550px;
+    width: 600px;
     height: auto;
     flex-shrink: 0;
     position: absolute;
     right: -140px;
-    top: -94px;
+    top: -87px;
 }
 .time-count-area {
     position: relative;
@@ -658,7 +661,7 @@ img.star-img{
 footer {
     background: #000;
     clip-path: ellipse(85% 100% at 50% 100%);
-    padding: 100px 60px 30px 60px;
+    padding: 80px 60px 30px 60px;
     margin-top: 100px;
 }
 .responsible-context{
@@ -666,11 +669,11 @@ footer {
 }
 .responsible-context > h2{
     color: #FFF;
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: 55px; 
-    padding-bottom: 20px;
+    padding-bottom: 8px;
 }
 .responsible-context > p{
     color: rgba(255, 255, 255, 0.60);
@@ -727,5 +730,52 @@ footer {
     font-size: 15px;
     font-style: normal;
     font-weight: 300;
+    line-height: 24px;
+    padding: 40px 80px 20px 80px;
+}
+.copyright > p > a{
+    color: #ffffff;
+}
+.header-bg.header-subpages-background {
+    background-image: url('../images/lotto-jax-sub-thumnail.png');
+}
+.banner-context.banner-context-subpages{
+    padding: 50px 0px;
+}
+.banner-context.banner-context-subpages > h1{
+    padding: 20px 0px;
+    font-size: 50px !important;
+}
+.subpages-section{
     padding: 30px 0px 0px 0px;
+}
+.subpages-text > h2{
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px; 
+    margin-top: 25px;
+}
+.subpages-text > p{
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 8px 0px 20px 0px;
+}
+.subpages-text > ul{
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 8px 0px 20px 60px;
+}
+.subpages-text > p > a{
+    color: #008CFF;
+}
+.subpages-text > ul > li a{
+    color: #008CFF;
 }
